@@ -26,10 +26,6 @@ rm -rf "$folder_path/main.txt"
 cat "$folder_path/domains.txt" | httpx -title -wc -sc -cl -ct -location -web-server -asn -o "$folder_path/httpx.txt"
 
 
-
-
-
-# Use httpx to gather more information about the subdomains
 cat "$folder_path/domains.txt" | httpx  -o "$folder_path/alive-subdomains.txt"
 
 
